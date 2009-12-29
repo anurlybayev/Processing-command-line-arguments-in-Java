@@ -1,18 +1,21 @@
+package ml.options;
+
 import ml.options.*;
 
 /**
- * java Example1_mod [-a] [-log=<logfile>] <inpfile> <outfile>
+ * java Example1 [-a] [-log=<logfile>] <inpfile> <outfile>
  */
 
 import static ml.options.Options.*;
 
-public class Example1_mod {
+public class Example1 {
 
   public static void main(String args[]) {
 
-    Options opt = new Options(args, Multiplicity.ZERO_OR_ONE, 2);
+    Options opt = new Options(args, 2);
     
-    opt.getSet().addOption("a").addOption("log", Separator.EQUALS);
+    opt.getSet().addOption("a", Multiplicity.ZERO_OR_ONE);
+    opt.getSet().addOption("log", Separator.EQUALS, Multiplicity.ZERO_OR_ONE);
 
     if (!opt.check()) {
       // Print usage hints
