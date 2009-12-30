@@ -1,4 +1,4 @@
-package ml.options;
+package ml.options.examples;
 
 import ml.options.*;
 

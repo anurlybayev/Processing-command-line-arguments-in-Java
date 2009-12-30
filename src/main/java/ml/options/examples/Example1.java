@@ -1,6 +1,8 @@
-package ml.options;
+package ml.options.examples;
 
 import ml.options.*;
+import ml.options.Options.Multiplicity;
+import ml.options.Options.Separator;
 
 /**
  * java Example1 [-a] [-log=<logfile>] <inpfile> <outfile>
