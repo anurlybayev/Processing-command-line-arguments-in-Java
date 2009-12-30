@@ -818,8 +818,10 @@ public class Options {
                             .append("No matching option found for argument ");
                     checkErrors.append(arguments[i]);
                     checkErrors.append('\n');
-                } else { // This is actual data
-                    if (first < 0) first = i;
+                }
+            } else { // This is actual data
+                if (!arguments[i].startsWith(pre)) {
+                    first = i;
                     data.add(arguments[i]);
                 }
             }

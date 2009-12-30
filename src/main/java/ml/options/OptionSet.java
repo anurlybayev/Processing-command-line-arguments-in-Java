@@ -371,6 +371,11 @@ public class OptionSet {
         OptionData od = new OptionData(
                 prefix, key, details, separator, value, multiplicity);
         
+        if(value) {
+            minData++;
+            maxData++;
+        }
+        
         options.add(od);
         keys.put(key, od);
 
