@@ -1,7 +1,6 @@
 package ml.options.examples;
 
-import ml.options.*;
-import ml.options.Options.Separator;
+import ml.options.Options;
 
 public class Test2 {
 

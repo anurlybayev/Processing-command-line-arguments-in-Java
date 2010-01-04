@@ -1,8 +1,6 @@
 package ml.options.examples;
 
-import ml.options.*;
-
-import static ml.options.Options.*;
+import ml.options.Options;
 
 public class Test3 {
 
